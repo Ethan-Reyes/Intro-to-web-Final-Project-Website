@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games | Ethan's Interests</title>
+    <meta
+      name="description"
+      content="The games Ethan plays, the ones he's mastered, and his own dark-fantasy game idea, Wolf."
+    />
+
+    <!-- Google Sans font, same as every page -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- links my CSS to this page -->
+  </head>
+  <body>
+    <!-- same header and nav as every content page -->
+    <header class="site-header site-header--nav">
+      <a class="site-title" href="index.html">Ethan's Interests</a>
+      <button
+        type="button"
+        class="nav-toggle"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        Menu
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul class="site-nav__list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="philosophy-christianity.html">Philosophy</a></li>
+          <li><a href="career-schooling.html">Career</a></li>
+          <li><a href="games.html" aria-current="page">Games</a></li>
+          <li><a href="experiences-influences.html">Experiences</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page">
+      <div class="page-intro">
+        <h1>Games</h1>
+        <p>
+          Games are more than a hobby for me. They're how I relax, how I
+          challenge myself, and how I create.
+        </p>
+      </div>
+
+      <div class="card-grid">
+        <!-- where I started -->
+        <section class="card">
+          <h2>Where I Started</h2>
+          <p>
+            I started out on simpler games like Minecraft, Terraria, and Call of
+            Duty. They were a big part of growing up, and they were there for me
+            even when friendships were hard or people came and went.
+          </p>
+        </section>
+
+        <!-- where I ended up -->
+        <section class="card">
+          <h2>Where I Ended Up</h2>
+          <p>
+            As I got older I got pulled toward harder, deeper, story-heavy
+            games. These days that means Dark Souls, Dark Souls III, Bloodborne,
+            Elden Ring, Lords of the Fallen, and Counter-Strike.
+          </p>
+          <p>
+            I don't see them as just entertainment. The stories, atmosphere,
+            characters, and difficulty changed how I think about perseverance,
+            identity, morality, failure, and growing as a person.
+          </p>
+        </section>
+
+        <!-- platinums -->
+        <section class="card card--wide">
+          <h2>Platinum Trophies</h2>
+          <p>
+            I've gotten the platinum in four of them. It took a lot of failing
+            to get there, and that's honestly the point.
+          </p>
+          <ul class="tag-list">
+            <li>Dark Souls</li>
+            <li>Dark Souls III</li>
+            <li>Bloodborne</li>
+            <li>Elden Ring</li>
+          </ul>
+        </section>
+
+        <!-- Lords of the Fallen: the image + trailer for the responsive media part of the rubric.
+             the layout (side by side, then stacked on phones) is in style.css under .showcase -->
+        <section class="card card--wide">
+          <h2>Lords of the Fallen</h2>
+          <p>
+            One of the harder, story-heavy games on my list. Here's the cover
+            and the trailer.
+          </p>
+
+          <div class="showcase">
+            <!-- cover art. width and height are just the real size so the page doesn't jump
+                 while it loads, the CSS makes it shrink to fit -->
+            <figure class="showcase__art">
+              <img
+                class="media"
+                src="images/lotf.jpeg"
+                alt="Cover art for Lords of the Fallen: an armored knight seen from behind raises one gauntlet in a teal glowing mist, with skeletons in the grass around him"
+                width="365"
+                height="547"
+              />
+              <figcaption>
+                Cover art for Lords of the Fallen. The art belongs to its
+                developers and publisher.
+              </figcaption>
+            </figure>
+
+            <!-- trailer. I took the embed code from YouTube and cleaned it up:
+                 no frameborder (the validator doesn't like it), lazy loading added,
+                 and the wrapper keeps it 16:9 on every screen size -->
+            <figure>
+              <div class="video-frame">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/_zDZYrIUgKE?si=HRbEL8MyCgNAuK0u"
+                  title="Lords of the Fallen trailer"
+                  loading="lazy"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                    web-share;
+                  "
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <figcaption>The trailer, straight from YouTube.</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <!-- Wolf, my own game idea -->
+        <section class="card card--wide">
+          <h2>My Own Game Idea: Wolf</h2>
+          <p>
+            Wolf is a dark-fantasy game I came up with, and it's more than just
+            an idea to me. It's built around the questions I got interested in
+            as I grew up: morality, obedience, conscience, guilt, redemption,
+            humanity, faith, and what our choices end up costing.
+          </p>
+          <h3>The story</h3>
+          <p>
+            You play a Church hunter who starts out thinking he's just doing his
+            job. Slowly he realizes there's a lot of humanity and moral
+            complexity in the people he's been ordered to eliminate.
+          </p>
+          <h3>The idea behind it</h3>
+          <p>
+            The mechanics and the story are both meant to show the tension
+            between a darker way of living and a more compassionate one. Wolf is
+            a good example of how the way I've grown has started showing up in
+            what I create.
+          </p>
+          <p class="card__gift">
+            <strong>What games gave me:</strong> creativity, a real challenge,
+            and a way to express myself.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Ethan</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

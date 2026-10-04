@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ethan's Interests | Home</title>
+    <meta
+      name="description"
+      content="A personal interests website by Ethan Reyes."
+    />
+
+    <!-- Google Sans font (from Module 2) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Shared stylesheet used by every page -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1 class="site-title">Ethan's Interests</h1>
+    </header>
+
+    <main class="home">
+      <!-- Circle wheel menu. Credit: adapted from CodeFronts "Full Circle Wheel" -->
+      <section class="wheel" aria-label="Interest pages wheel">
+        <div class="wheel__pointer" aria-hidden="true"></div>
+
+        <nav class="wheel__machine" aria-label="Interest pages">
+          <ul class="wheel__list">
+            <li class="wheel__item">
+              <button
+                type="button"
+                class="wheel__stop is-active"
+                aria-pressed="true"
+                data-title="Philosophy &amp; Christianity"
+                data-href="philosophy-christianity.html"
+              >
+                Philosophy
+              </button>
+            </li>
+            <li class="wheel__item">
+              <button
+                type="button"
+                class="wheel__stop"
+                aria-pressed="false"
+                data-title="Career &amp; Schooling"
+                data-href="career-schooling.html"
+              >
+                Career
+              </button>
+            </li>
+            <li class="wheel__item">
+              <button
+                type="button"
+                class="wheel__stop"
+                aria-pressed="false"
+                data-title="Favorite Games "
+                data-href="games.html"
+              >
+                Games
+              </button>
+            </li>
+            <li class="wheel__item">
+              <button
+                type="button"
+                class="wheel__stop"
+                aria-pressed="false"
+                data-title="Experiences &amp; Influences"
+                data-href="experiences-influences.html"
+              >
+                Experiences
+              </button>
+            </li>
+          </ul>
+
+          <!-- Center of the wheel: clicking the title opens the selected page -->
+          <div class="wheel__face">
+            <a class="wheel__open" href="philosophy-christianity.html">
+              <span class="wheel__label">Now browsing</span>
+              <strong class="wheel__current"
+                >Philosophy &amp; Christianity</strong
+              >
+              <span class="wheel__cta">Open page &rarr;</span>
+            </a>
+            <div class="wheel__steer">
+              <button
+                type="button"
+                class="wheel__prev"
+                aria-label="Previous section"
+              >
+                &larr;
+              </button>
+              <button
+                type="button"
+                class="wheel__next"
+                aria-label="Next section"
+              >
+                &rarr;
+              </button>
+            </div>
+          </div>
+
+          <!-- Screen reader announcement -->
+          <p class="wheel__live" aria-live="polite"></p>
+        </nav>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Ethan Reyes</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
