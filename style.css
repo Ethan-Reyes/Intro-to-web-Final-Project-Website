@@ -661,12 +661,13 @@ main {
   border: 0; /* this replaces the old frameborder="0" attribute */
 }
 
+.showcase__art {
+  max-width: 20rem;   
+  margin-inline: auto;
+}
+
 @media (min-width: 768px) {
   .showcase {
-    grid-template-columns: 16rem 1fr;
-  }
-
-  .showcase__art {
-    margin-inline: 0;
+    grid-template-columns: 20rem 1fr;   
   }
 }
