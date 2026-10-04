@@ -626,34 +626,34 @@ main {
 }
 
 /* ----------------------------------------------------------
-   10. image + trailer card (on the Games page)
-   on phones and tablets the image and video stack and center,
-   on a computer they sit side by side. I capped both sizes
-   so nothing sticks out of the card
+   10. image + trailer (Games page)
+   I kept this simple: the image and video stack and sit in the
+   middle, on every screen size
    ---------------------------------------------------------- */
 .showcase {
   display: grid;
-  grid-template-columns: minmax(0, 1fr); /* minmax(0, ...) stops the video from pushing past the card */
   gap: 1.5rem;
   justify-items: center;
 }
 
 .showcase figure {
   width: 100%;
-  margin: 0; /* figures come with a big default margin, this removes it */
+  margin: 0;
   text-align: center;
 }
 
-/* the cover art is tall, so I keep it small so it doesn't take over the screen */
-.showcase .showcase__art {
-  max-width: 14rem;
-  margin-inline: auto;
+/* cover art stays small so it doesn't take over the screen */
+.showcase__art img {
+  width: 100%;
+  max-width: 16rem;
 }
 
-/* keeps the video in a 16:9 box that shrinks with the screen */
+/* the video keeps a 16:9 shape and never gets wider than the card */
 .video-frame {
   aspect-ratio: 16 / 9;
   width: 100%;
+  max-width: 36rem;
+  margin-inline: auto;
   overflow: hidden;
   border-radius: 0.75rem;
   background-color: var(--ink);
@@ -663,19 +663,5 @@ main {
   display: block;
   width: 100%;
   height: 100%;
-  border: 0; /* this replaces the old frameborder="0" attribute */
-}
-
-/* the video never gets wider than this, so it stays about as tall as the image */
-.showcase__video {
-  max-width: 36rem;
-}
-
-/* side by side on a computer */
-@media (min-width: 900px) {
-  .showcase {
-    grid-template-columns: 14rem minmax(0, 36rem); /* image column, then video column */
-    justify-content: center;
-    align-items: center; /* lines the two up down the middle */
-  }
+  border: 0;
 }
